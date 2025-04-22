@@ -1,0 +1,78 @@
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .search-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .protein-info {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #e9f5ff;
+  }
+  
+  .protein-info p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  
+  .error-message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .mat-elevation-z8 {
+    margin: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  span .highlight {
+    background-color: yellow !important;
+    font-weight: bold;
+  }
+  
+  #viewer-container {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  #viewer canvas {
+    position: relative;
+  }

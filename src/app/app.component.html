@@ -1,0 +1,20 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav" mode="side" opened>
+    <mat-nav-list>
+      <mat-list-item routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" disableRipple>Protein Explorer</mat-list-item>
+      <mat-list-item *ngIf="isAuthenticated" routerLink="/proteins" routerLinkActive="active-link" disableRipple>Proteins</mat-list-item>
+      <mat-list-item *ngIf="!isAuthenticated" routerLink="/login" routerLinkActive="active-link" disableRipple>Login</mat-list-item>
+      <mat-list-item *ngIf="isAuthenticated" (click)="logout()" routerLinkActive="active-link" disableRipple>Logout</mat-list-item>
+      <!-- <mat-list-item routerLink="/register" routerLinkActive="active-link" disableRipple>Register</mat-list-item> -->
+      <!-- <mat-list-item routerLink="/search" routerLinkActive="active-link" disableRipple>Search</mat-list-item> -->
+      <!--<mat-list-item *ngIf="isAuthenticated" routerLink="/proteins" routerLinkActive="active-link" disableRipple>Proteins</mat-list-item>-->
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
